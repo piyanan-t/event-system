@@ -6,9 +6,9 @@ date_default_timezone_set('Asia/Bangkok');
 // ตั้งค่าฐานข้อมูล (แก้ไขตามที่ได้รับจาก FreeSQLDatabase)
 // =============================================
 define('DB_HOST', 'sql.freesqldatabase.com');   // เปลี่ยนตรงนี้
-define('DB_NAME', 'sql_xxxxxxx');               // เปลี่ยนตรงนี้
-define('DB_USER', 'sql_xxxxxxx');               // เปลี่ยนตรงนี้
-define('DB_PASS', 'your_password');             // เปลี่ยนตรงนี้
+define('DB_NAME', 'sql123456');               // เปลี่ยนตรงนี้
+define('DB_USER', 'sql123456');               // เปลี่ยนตรงนี้
+define('DB_PASS', ' bSPZzX1nRZ');             // เปลี่ยนตรงนี้
 
 // =============================================
 // ตั้งค่าเว็บไซต์
