@@ -15,7 +15,7 @@ CREATE TABLE IF NOT EXISTS `admins` (
   `username` VARCHAR(100) NOT NULL,
   `password` VARCHAR(255) NOT NULL,
   `name` VARCHAR(200) NOT NULL,
-  `created_at` DATETIME DEFAULT CURRENT_TIMESTAMP,
+  `created_at` TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`),
   UNIQUE KEY `username` (`username`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -36,7 +36,7 @@ CREATE TABLE IF NOT EXISTS `events` (
   `event_time` TIME,
   `status` ENUM('active','inactive') DEFAULT 'active',
   `qr_token` VARCHAR(64) NOT NULL,
-  `created_at` DATETIME DEFAULT CURRENT_TIMESTAMP,
+  `created_at` TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`),
   UNIQUE KEY `qr_token` (`qr_token`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -53,7 +53,7 @@ CREATE TABLE IF NOT EXISTS `registrations` (
   `classroom` VARCHAR(50) NOT NULL,
   `department` VARCHAR(100) NOT NULL,
   `phone` VARCHAR(20),
-  `registered_at` DATETIME DEFAULT CURRENT_TIMESTAMP,
+  `registered_at` TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
   `ip_address` VARCHAR(45),
   PRIMARY KEY (`id`),
   UNIQUE KEY `unique_student_event` (`event_id`, `student_id`),
